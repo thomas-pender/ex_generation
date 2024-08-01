@@ -6,4 +6,4 @@ dist_man1_MANS = docs/bgw.man docs/circ.man docs/simplex.man \
 docs/bal_split_hadamard.man docs/bal_split_od.man \
 docs/hadi_generalized_quadrangle.man docs/pseudogeometric.man
 
-
+EXTRA_DIST = README.md
