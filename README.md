@@ -18,7 +18,8 @@ the scripts and place them <tt>build/src</tt> with executable privileges. Runnin
 override this default behaviour by running <tt>../configure --prefix=dir</tt>
 instead of simply <tt>../configure</tt>. Then the executables will be copied to
 <tt>dir</tt> instead. If you do not want the executables installed, simply omit
-<tt>sudo make install</tt>.
+<tt>sudo make install</tt>. If you clone the repository, you will first need to 
+run <tt>autoreconf -i</tt>.
 
 # Documentaion
 
