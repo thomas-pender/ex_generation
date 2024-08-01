@@ -1,0 +1,23 @@
+.TH HADI_GENERALIZED_QUADRANGLE 1
+.SH NAME
+hadi_generalized_quadrangle \- Constructs generalized quadrangles.
+.SH SYNOPSIS
+.B hadi_generalized_quadrangle
+[options]
+[numerical parameter]
+.SH DESCRIPTION
+Employs Hadi Kharaghani's construction of a generalized quadrangle given a prime power \fBq\fR.
+.SH OPTIONS
+.TP
+.BR \-o  " " \fIfile\fR
+Takes output file as argument. The construct generalized quadrangle will be output to the given file \fIfile\fR.
+.HP
+The option \fB\-o\fR is mandatory.
+.SH PARAMETERS
+.TP
+.BR q
+An odd prime power.
+.SH EXIT STATUS
+Return 0 on success, 1 otherwise.
+.SH AUTHOR
+Thomas Pender (tsp7@sfu.ca)

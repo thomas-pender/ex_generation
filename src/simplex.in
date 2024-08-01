@@ -9,7 +9,7 @@ eval set -- $(getopt -o ho: -- "$@")
 
 while [ -n "$1" ]; do
 case "$1" in
--h) man simplex; exit 0 ;;
+-h) man $(basename $0); exit 0 ;;
 -o) outfile="$2" ; shift ;;
 --) shift ; break ;;
 *) echo ***Error: Incorrect parameters. ; echo "$helper" ; exit 1 ;;

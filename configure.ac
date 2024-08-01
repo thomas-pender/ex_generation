@@ -12,5 +12,9 @@ AC_CONFIG_FILES([Makefile])
 AC_CONFIG_FILES([src/bgw], [chmod +x src/bgw])
 AC_CONFIG_FILES([src/circ], [chmod +x src/circ])
 AC_CONFIG_FILES([src/simplex], [chmod +x src/simplex])
+AC_CONFIG_FILES([src/bal_split_hadamard], [chmod +x src/bal_split_hadamard])
+AC_CONFIG_FILES([src/bal_split_od], [chmod +x src/bal_split_od])
+AC_CONFIG_FILES([src/hadi_generalized_quadrangle], [chmod +x src/hadi_generalized_quadrangle])
+AC_CONFIG_FILES([src/pseudogeometric], [chmod +x src/pseudogeometric])
 
 AC_OUTPUT

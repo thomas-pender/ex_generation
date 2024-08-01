@@ -1,4 +1,4 @@
-.TH bgw 1
+.TH BGW 1
 .SH NAME
 bgw \- construct classical parameter BGW matrices
 .SH SYNOPSIS
@@ -62,6 +62,13 @@ Accepts the file to store the output. Used with every instance of \fIbgw\fR.
 .BR \-w
 Used in conjuction with \fB\-c\fR or \fB\-C\fR whenever \fBq\fR is odd.
 +1 and -1 are substituted for nonzero entries of the BGW matrix.
+.SH PARAMETERS
+.TP
+.BR q
+A prime power.
+.TP
+.BR d
+An integer exponent greater than 1.
 .SH EXIT STATUS
 Return 0 on success, 1 otherwise.
 .SH AUTHOR

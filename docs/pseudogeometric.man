@@ -1,0 +1,33 @@
+.TH PSUEDOGEOMETRIC 1
+.SH NAME
+psuedogeometric \- tests whether a given SRG parameter set are those of a pseudogeometric SRG.
+.SH SYNOPSIS
+.B psuedogeometric
+[numerical parameters]
+.SH DESCRIPTION
+.B psuedogeometric
+tests whether the given parameter set are those of a pseudogeometric graph.
+.SH PARAMETERS
+.TP
+.BR v
+Number of vertices of graph.
+.TP
+.BR k
+Valency of the graph.
+.TP
+.BR n
+Number of common neighbours for any pair of adjacent vertices.
+.TP
+.BR m
+Number of common neighbours for any pair of nonadjacent vertices.
+.SH EXAMPLE
+.TP
+.BR pseudogeometric " "  v " " k " " n " " m
+The ordering of the parameters is necessary.
+.SH BUGS
+It is well known that the \fIsage\fR solver is buggy. As such, the results should always be verified.
+.SH
+.SH EXIT STATUS
+Return 0 on success, 1 otherwise.
+.SH AUTHOR
+Thomas Pender (tsp7@sfu.ca)

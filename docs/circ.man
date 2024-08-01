@@ -1,4 +1,4 @@
-.TH circ 1
+.TH CIRC 1
 .SH NAME
 circ \- constructs (nega)circulant and block (nega)circulant matrix group generator.
 .SH SYNOPSIS
@@ -34,6 +34,10 @@ Constructs block negacirculant matrix generator of block dimension \fBd\fR.
 Requires options \fB\-o\fR and \fB\-i\fR.
 The (0,1) entry is provided as an argument to the option \fB\-i\fR.
 \fIExample\fR: circ d -No \fIfile1\fR -i \fIfile2\fR
+.SH PARAMETERS
+.TP
+.bR d
+Dimension of (block) matrix generator.
 .SH EXIT STATUS
 Return 0 on success, 1 otherwise.
 .SH AUTHOR

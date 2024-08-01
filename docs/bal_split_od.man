@@ -1,0 +1,25 @@
+.TH BAL_SPLIT_OD 1
+.SH NAME
+bal_split_od \- construct a balanced splittable orthogonal design given a seed orthogonal design.
+.SH SYNOPSIS
+.B bal_split_od \-i \fIfile1\fB \-o \fIfile2\fR
+.SH DESCRIPTION
+.B bal_split_od
+constructs a balanced splittable orthogonal design of order 4N^2 given an input orthogonal design of order N.
+.SH OPTIONS
+.TP
+.BR \-i " " \fIfile\fR
+Takes input file as argument. The input file \fIfile\fR contains an orthogonal design.
+The first line of the input file must be a whitespace separated list of the distinct variable entries of the input matrix.
+.TP
+.BR \-o " " \fIfile\fR
+Takes ouput file as argument. The balanced splittable orthogonal design is output to \fIfile\fR.
+.TP
+.BR \-h
+Displays current help page.
+.HP
+Each of the options \fB\-i\fR and \fB\-o\fR are mandatory.
+.SH EXIT STATUS
+Return 0 on success, 1 otherwise.
+.SH AUTHOR
+Thomas Pender (tsp7@sfu.ca)

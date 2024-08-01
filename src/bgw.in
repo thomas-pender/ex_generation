@@ -14,7 +14,7 @@ case "$1" in
 -c) if [ -z $kind ]; then kind="c" ; fi ;;
 -g) gp="g" ; gpord="$2" ; shift ;;
 -H) if [ -z $kind ]; then kind="H" ; fi ;;
--h) man bgw; exit 0 ;;
+-h) man $(basename $0); exit 0 ;;
 -i) infile="$2" ; shift ;;
 -o) outfile="$2" ; shift ;;
 -p) perms="p" ;;

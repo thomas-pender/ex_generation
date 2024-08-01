@@ -1,0 +1,24 @@
+.TH BAL_SPLIT_HADAMARD 1
+.SH NAME
+bal_split_hadamard \- construct a balanced splittable Hadamard matrix given a seed Hadamard matrix.
+.SH SYNOPSIS
+.B bal_split_hadamard \-i \fIfile1\fB \-o \fIfile2\fR
+.SH DESCRIPTION
+.B bal_split_hadamard
+constructs a balanced splittable Hadamard matrix of order 4N^2 given an input Hadamard matrix of order N.
+.SH OPTIONS
+.TP
+.BR \-i " " \fIfile\fR
+Takes input file as argument. The input file \fIfile\fR contains a Hadamard matrix.
+.TP
+.BR \-o " " \fIfile\fR
+Takes ouput file as argument. The balanced splittable Hadamard matrix is output to \fIfile\fR.
+.TP
+.BR \-h
+Displays current help page.
+.HP
+Each of the options \fB\-i\fR and \fB\-o\fR are mandatory.
+.SH EXIT STATUS
+Return 0 on success, 1 otherwise.
+.SH AUTHOR
+Thomas Pender (tsp7@sfu.ca)
