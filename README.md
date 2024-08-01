@@ -12,6 +12,7 @@ To install the scripts run
 1. <tt>mkdir build && cd build</tt>
 2. <tt>../configure</tt>
 3. <tt>sudo make install</tt>
+
 Running <tt>configure</tt> from inside the <tt>build</tt> directory will generate
 the scripts and place them <tt>build/src</tt> with executable privileges. Running
 <tt>sudo make install</tt> copies the scripts to <tt>/usr/bin</tt>. You can
