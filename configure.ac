@@ -1,5 +1,5 @@
 AC_PREREQ([2.71])
-AC_INIT([ex_gen], [0.0])
+AC_INIT([ex_generation], [0.0])
 
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_SRCDIR([src/bgw.in])
