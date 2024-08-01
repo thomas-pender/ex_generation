@@ -9,18 +9,16 @@ codes, etc.
 # Installation
 
 To install the scripts run
-
-    1. <tt>mkdir build && cd build</tt>
-    2. <tt>../configure</tt>
-    3. <tt>sudo make install</tt>
-
+1. <tt>mkdir build && cd build</tt>
+2. <tt>../configure</tt>
+3. <tt>sudo make install</tt>
 Running <tt>configure</tt> from inside the <tt>build</tt> directory will generate
 the scripts and place them <tt>build/src</tt> with executable privileges. Running
 <tt>sudo make install</tt> copies the scripts to <tt>/usr/bin</tt>. You can
 override this default behaviour by running <tt>../configure --prefix=dir</tt>
 instead of simply <tt>../configure</tt>. Then the executables will be copied to
 <tt>dir</tt> instead. If you do not want the executables installed, simply omit
-<tt>sudo make install</tt>. If you clone the repository, you will first need to 
+<tt>sudo make install</tt>. If you clone the repository, you will first need to
 run <tt>autoreconf -i</tt>.
 
 # Documentaion
