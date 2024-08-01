@@ -1,0 +1,68 @@
+.TH bgw 1
+.SH NAME
+bgw \- construct classical parameter BGW matrices
+.SH SYNOPSIS
+.B bgw
+[options]
+[numerical parameters]
+.SH DESCRIPTION
+.B bgw
+constructs classical parameter matrices.
+.SH OPTIONS
+.TP
+.BR \-a
+Invokes Hadi Kharaghani's OA construction.
+Required additional options are \fB\-o\fR and \fB\-i\fR.
+The option \fB\-i\fR must contain a classical parameter BGW.
+Requires numerical parameters \fBq\fR a prime power and \fBd\fR an integer exponent greater than 1 in that order.
+\fIExample\fR: bgw -ai \fIfile1\fR -o \fIfile2\fR q d
+.TP
+.BR \-c
+Constructs classical parameter BGW.
+Requires option \fB\-o\fR with argument the output file.
+Requires numerical parameters \fBq\fR a prime power and \fBd\fR an integer exponent greater than 1 in that order.
+Can be used in conjuction with \fB\-w\fR whenever \fBq\fR is odd to map nonzero matrix entries to +1 or -1.
+Can be used in conjuction with \fB\-g\fR which substitutes circulant matrix group for entries of BGW.
+\fIExample\fR: bgw -co \fIfile\fR q d
+.TP
+.BR \-C
+Constructs a generalized conference matrix. It is skew\-symmetric if \Bfq\fR is odd, and it is symmetric if \fBq\fR is even.
+Requires option \fB\-o\fR with argument the output file.
+Requires numerical parameters \fBq\fR a prime power and \fBd\fR an integer exponent greater than 1 in that order.
+Can be used in conjuction with \fB\-w\fR whenever \fBq\fR is odd to map nonzero matrix entries to +1 or -1.
+Can be used in conjuction with \fB\-g\fR which substitutes circulant matrix group for entries of BGW.
+\fIExample\fR: bgw -Co \fIfile\fR q d
+.TP
+.BR \-g " " \fIorder\fR
+\fIorder\fR is the order of the matrix group.
+Used in conjuction with \fB\-c\fR or \fB\-C\fR in order to substitute circulant matrix group for entries of BGW matrix.
+Requires the option \fB\-i\fR which takes as input file the matrix group.
+\fIExample\fR: bgw -cg \fIorder\fR -i \fIfile1\fR -o \fIfile2\fR q d
+.TP
+.BR \-h
+Displays current help page.
+.TP
+.BR \-H
+Constructs classical parameter GH matrices.
+Requires option \fB\-o\fR with argument the output file.
+Requires numerical parameters \fBq\fR a prime power and \fBd\fR an integer exponent greater than 1 in that order.
+Can be used in conjunction with \fB\-p\fR to substitute permutation matrices for entries of GH matrix.
+\fIExample\fR: bgw -Ho \fIfile\fR q d
+.TP
+.BR \-i " " \fIfile\fR
+Takes input file as argument. Used with options \fB\-a\fR and \fB\-g\fR.
+.TP
+.BR \-p
+Constructs classical parameter GH matrix whose entries are represented by permutation matrices.
+\fIExample\fR: bgw -Hpo \fIfile\fR q d.
+.TP
+.BR \-o " " \fIfile\fR
+Accepts the file to store the output. Used with every instance of \fIbgw\fR.
+.TP
+.BR \-w
+Used in conjuction with \fB\-c\fR or \fB\-C\fR whenever \fBq\fR is odd.
++1 and -1 are substituted for nonzero entries of the BGW matrix.
+.SH EXIT STATUS
+Return 0 on success, 1 otherwise.
+.SH AUTHOR
+Thomas Pender (tsp7@sfu.ca)

@@ -1,0 +1,31 @@
+#!/bin/sh
+
+ERR="ERROR:"
+helper="Use simplex for help."
+
+if [ $# -eq 0 ]; then echo -e "${ERR} Expected parameters. ${helper}" ; exit 1 ; fi
+
+eval set -- $(getopt -o ho: -- "$@")
+
+while [ -n "$1" ]; do
+case "$1" in
+-h) man simplex; exit 0 ;;
+-o) outfile="$2" ; shift ;;
+--) shift ; break ;;
+*) echo ***Error: Incorrect parameters. ; echo "$helper" ; exit 1 ;;
+esac
+shift
+done
+
+if [ $# -lt 2 ]; then echo -e "${ERR} Expects 2 parameters. ${helper}" ; exit 1 ; fi
+file=@abs_top_srcdir@/src/funcs.sage
+
+sage -q 1> /dev/null << EOF
+load('$file')
+S=simplex(int($1),int($2))
+f=open('$outfile','w')
+for line in S:
+    f.write(' '.join([str(x) for x in line])+'\n')
+f.close()
+quit
+EOF

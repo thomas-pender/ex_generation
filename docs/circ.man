@@ -1,0 +1,40 @@
+.TH circ 1
+.SH NAME
+circ \- constructs (nega)circulant and block (nega)circulant matrix group generator.
+.SH SYNOPSIS
+.B circ
+[options]
+[numerical parameters]
+.SH DESCRIPTION
+.B circ
+constructs (nega)circulant and block (nega)circulant matrix group generator and outputs the result to a provided file.
+.SH OPTIONS
+.TP
+.BR \-c
+Constructs circulant matrix generator of dimension \fBd\fR.
+Requires option \fB\-o\fR.
+\fIExample\fR: circ d -co \fIfile\fR
+.TP
+.BR \-C
+Constructs block circulant matrix generator of block dimension \fBd\fR.
+Requires options \fB\-o\fR and \fB\-i\fR.
+The (0,1) entry is provided as an argument to the option \fB\-i\fR.
+\fIExample\fR: circ d -Co \fIfile1\fR -i \fIfile2\fR
+.TP
+.BR \-h
+Displays current help page.
+.TP
+.BR \-n
+Constructs negacirculant matrix generator of dimension \fBd\fR.
+Requires option \fB\-o\fR.
+\fIExample\fR: circ d -no \fIfile\fR
+.TP
+.BR \-N
+Constructs block negacirculant matrix generator of block dimension \fBd\fR.
+Requires options \fB\-o\fR and \fB\-i\fR.
+The (0,1) entry is provided as an argument to the option \fB\-i\fR.
+\fIExample\fR: circ d -No \fIfile1\fR -i \fIfile2\fR
+.SH EXIT STATUS
+Return 0 on success, 1 otherwise.
+.SH AUTHOR
+Thomas Pender (tsp7@sfu.ca)

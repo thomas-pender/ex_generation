@@ -1,0 +1,21 @@
+.TH simplex 1
+.SH NAME
+simplex \- construct generalized simplex code.
+.SH SYNOPSIS
+.B simplex
+[options]
+[numerical parameters]
+.SH DESCRIPTION
+.B
+simplex
+constructs the generalized simplex code and outputs to provided file.
+.SH OPTIONS
+.BR \-o " " \fIfile\fR
+Takes the output file as an argument.
+\fIExample\fR: simplex -o \fIfile\fR q d
+.HP
+The additional parameters are a prime power \fBq\fR and an integer exponent \fBd\fR greater than 1.
+.SH EXIT STATUS
+Return 0 on success, 1 otherwise.
+.SH AUTHOR
+Thomas Pender (tsp7@sfu.ca)
