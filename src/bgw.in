@@ -27,8 +27,8 @@ done
 
 if [ -z "$kind" ]; then echo -e "${ERR} Requires options. ${helper}" ; exit 1
 elif [ -z "$outfile" ]; then echo -e "${ERR} Requires output file. ${helper}" ; exit 1
-elif [ -n "$gp" ] && [ -z "$infile" ]; then echo -e "${ERR} Requires input file with \e[4m-g\e[0m. ${helper}" ; exit 1
-elif [ "$kind" = "a" ] && [ -z "$infile" ]; then echo -e "${ERR} Requires input file with \e[4m-a\e[0m. ${helper}" ; exit 1
+elif [ -n "$gp" ] && [ -z "$infile" ]; then echo -e "${ERR} Requires input file with -g. ${helper}" ; exit 1
+elif [ "$kind" = "a" ] && [ -z "$infile" ]; then echo -e "${ERR} Requires input file with -a. ${helper}" ; exit 1
 fi
 
 file=@abs_top_srcdir@/src/funcs.sage

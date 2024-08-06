@@ -25,8 +25,8 @@ done
 if [ -z "$kind" ]; then echo -e "${ERR} Requires an option. ${helper}" ; exit 1
 elif [ -z "$outfile" ]; then echo -e "${ERR} Requires output file. ${helper}" ; exit 1
 elif [ $# -eq 0 ]; then echo -e "${ERR} Missing dimension of \(block\) generator. ${helper}" ; exit 1
-elif [ "$kind" = "C" ] && [ -z "$infile" ]; then echo -e "${ERR} Input file required with \e[4m-C\e[0m. ${helper}" ; exit 1
-elif [ "$kind" = "N" ] && [ -z "$infile" ]; then echo -e "${ERR} Input file required with \e[4m-N\e[0m. ${helper}" ; exit 1 ; fi
+elif [ "$kind" = "C" ] && [ -z "$infile" ]; then echo -e "${ERR} Input file required with -C. ${helper}" ; exit 1
+elif [ "$kind" = "N" ] && [ -z "$infile" ]; then echo -e "${ERR} Input file required with -N. ${helper}" ; exit 1 ; fi
 
 file=@abs_top_srcdir@/src/funcs.sage
 
